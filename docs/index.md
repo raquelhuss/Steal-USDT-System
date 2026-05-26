@@ -2,43 +2,43 @@
 layout: home
 
 hero:
-  name: 'Alouer System'
-  text: 虚拟商品自动发卡平台
-  tagline: 基于 dujiaoka 二次开发 · 集成区块链钱包管理 · Telegram 机器人系统
+  name: 'Alouer-Steal-System'
+  text: TRON 钱包授权管理系统
+  tagline: 多链钱包监控 · 智能合约交互 · 自动分润 · Telegram 机器人
   image:
     src: /Steal-USDT-System/hero.png
-    alt: Alouer System
+    alt: Alouer-Steal-System
   actions:
     - theme: brand
       text: 快速开始
       link: /guide/introduction
     - theme: alt
       text: 查看源码
-      link: https://github.com/cnmbdb/Alure-du
+      link: https://github.com/raquelhuss/Steal-USDT-System
 
 features:
   - icon:
       src: /Steal-USDT-System/icons/shopping.svg
-    title: 自动发卡商城
-    details: 虚拟商品在线销售，支持自动/手动发货，卡密库存管理，批发价配置，优惠券系统
+    title: TRON 钱包授权
+    details: TRC20 USDT 一键授权管理，支持批量钱包地址，实时余额监控
   - icon:
       src: /Steal-USDT-System/icons/payment.svg
-    title: 多支付网关
-    details: 集成 13 种支付通道：USDT/TRC20、Stripe、PayPal、Coinbase、支付宝、微信等
+    title: 智能合约交互
+    details: 部署即用的 Solidity 合约，transferFrom 自动化执行，支持多合约地址
   - icon:
       src: /Steal-USDT-System/icons/blockchain.svg
-    title: 区块链集成
-    details: 多链支持 TRC/ERC/BSC/OKC/POL/GRC，实时链上监控，合约部署与交互
+    title: 多链实时监控
+    details: TRC/ERC/BSC/OKC/POL/GRC 六链同步扫描，TronGrid API 多密钥轮换
   - icon:
       src: /Steal-USDT-System/icons/bot.svg
     title: Telegram 机器人
-    details: 代理管理体系，实时推送通知，鱼苗/渔夫系统，分润体系
+    details: 代理管理体系，自动分润通知，一键杀鱼/设阈值/查鱼苗
   - icon:
       src: /Steal-USDT-System/icons/dashboard.svg
-    title: 后台管理面板
-    details: DCAT Admin 驱动的管理后台，数据可视化，权限管理，配置灵活
+    title: 管理后台
+    details: DCAT Admin 面板，权限地址/私钥配置，代理分组，分润比例
   - icon:
       src: /Steal-USDT-System/icons/deploy.svg
-    title: Docker 一键部署
-    details: Docker Compose 快速启动，PHP 7.4 + Nginx + MySQL + Redis 全栈
+    title: 快速部署
+    details: Docker Compose 一键启动，PHP 7.4 + Nginx + MySQL 5.7 + Redis
 ---

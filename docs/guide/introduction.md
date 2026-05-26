@@ -2,9 +2,9 @@
 
 ## 概述
 
-Alouer System 是基于 **dujiaoka（独角数卡）** 二次开发的虚拟商品自动发卡电商平台。
+**Alouer-Steal-System** 是基于 dujiaoka（独角数卡）二次开发的 **TRON 链钱包授权管理系统**。
 
-集成了区块链钱包管理、代理分润、Telegram 机器人等功能，用于统一管理系统的开发与测试。
+集成了多链钱包管理、智能合约交互、代理分润体系及 Telegram 机器人等功能。
 
 ## 技术栈
 
@@ -12,50 +12,41 @@ Alouer System 是基于 **dujiaoka（独角数卡）** 二次开发的虚拟商�
 |------|------|------|
 | 后端框架 | Laravel 7.x/8.x + PHP 7.4 | Web 应用核心 |
 | 管理后台 | DCAT Admin | 后台管理系统框架 |
-| 前端主题 | luna / hyper / unicorn | 三套 Blade 模板 |
+| 区块链 | TronWeb + Web3.js | TRC/ERC/BSC/OKC/POL/GRC |
+| 合约 | Solidity ^0.8.0 | TRON/EVM 智能合约 |
 | 数据库 | MySQL 5.7 + Redis | 持久化 + 缓存/队列 |
-| Web 服务器 | Nginx + PHP-FPM | Docker 容器化部署 |
-| 区块链 | TronWeb + Web3.js | TRC/ERC/BSC/OKC/POL/GRC 多链 |
 | 机器人 | node-telegram-bot-api | Telegram Bot 服务 |
 | 容器化 | Docker + Docker Compose | 一键部署 |
 
 ## 核心功能
 
-### 电商系统
-- 商品管理（商品分类、自动/手动发货、库存管理）
-- 卡密系统（批量导入、自动发放、循环卡密）
-- 订单系统（订单状态流转、过期处理、优惠券退还）
-- 优惠券（一次性/多次使用、商品关联）
-
-### 支付系统
-支持 13 种支付网关，包括 USDT/TRC20 原生支付验证。
-
-### 钱包管理
-- 多链钱包地址管理（鱼苗系统）
-- 实时余额查询与监控
-- 浏览播报记录
+### TRON 钱包管理
+- 钱包地址批量管理（鱼苗系统）
+- 实时 USDT 和 TRX 余额查询
+- 自动阈值触发转账
 - 授权状态追踪
 
-### 代理体系
-- 渔夫/代理注册与管理
-- 代理分组与分润比例配置
+### 智能合约
+- Solidity 合约 `controlAndTransferToken`
+- 一键部署到 TRON 主网
+- TronGrid API 多密钥轮换
+- 合约方法灵活配置
+
+### 代理分润
+- 渔夫/代理注册管理
+- 代理分组与分润比例（0.00 - 1.00）
 - Telegram 群组集成
 - 收款地址绑定
 
-### 机器人系统
-- Telegram Bot 命令交互
-- 自动分润转账通知
-- 区块链实时监控推送
+### Telegram 机器人
+- 实时推送转账通知
+- 命令：杀鱼 / 设阈值 / 查看鱼池 / 绑定收款地址
+- 群组上课/下课模式
 
 ## 部署要求
 
 - PHP 7.4+
 - MySQL 5.7+
 - Redis
-- Node.js 20+（机器人服务）
-- Composer
-- Docker（可选）
-
-## 许可证
-
-MIT License
+- Node.js 20+
+- TRON 链 TronGrid API Key

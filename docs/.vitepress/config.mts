@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Alouer System',
-  description: '虚拟商品自动发卡电商平台 - 集成区块链钱包管理与机器人系统',
+  title: 'Alouer-Steal-System',
+  description: 'TRON 链钱包授权管理系统 - 多链钱包监控、智能合约交互、Telegram 机器人',
   lang: 'zh-CN',
   base: '/Steal-USDT-System/',
   
@@ -13,13 +13,13 @@ export default defineConfig({
 
   themeConfig: {
     logo: false,
-    siteTitle: 'Alouer',
+    siteTitle: 'Alouer-Steal',
     
     nav: [
       { text: '指南', link: '/guide/introduction' },
       { text: '架构', link: '/guide/architecture' },
       { text: 'API', link: '/api/overview' },
-      { text: 'GitHub', link: 'https://github.com/cnmbdb/Alure-du' },
+      { text: 'GitHub', link: 'https://github.com/raquelhuss/Steal-USDT-System' },
     ],
 
     sidebar: {
@@ -58,7 +58,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/cnmbdb/Alure-du' }
+      { icon: 'github', link: 'https://github.com/raquelhuss/Steal-USDT-System' }
     ],
 
     search: {
@@ -76,8 +76,8 @@ export default defineConfig({
     },
 
     footer: {
-      message: '基于 dujiaoka（独角数卡）二次开发',
-      copyright: `© ${new Date().getFullYear()} Alouer System`
+      message: 'TRON 钱包授权管理系统',
+      copyright: `© ${new Date().getFullYear()} Alouer-Steal-System`
     },
 
     docFooter: {

