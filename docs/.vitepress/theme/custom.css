@@ -125,6 +125,13 @@ body {
 
 .VPSidebar {
   border-right: 1px solid var(--vp-c-border);
+  overflow: visible !important;
+}
+
+.VPSidebar .nav {
+  position: relative;
+  min-height: calc(100vh - var(--vp-nav-height) - 80px);
+  padding-bottom: 80px;
 }
 
 .VPSidebarItem .item .text {
@@ -644,9 +651,12 @@ body {
 
 /* Telegram Pill Button - Glass morphism */
 .telegram-pill {
-  position: relative;
-  margin: 32px 0 16px;
-  padding: 0 40px;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+  z-index: 1;
 }
 .telegram-pill a {
   display: flex;
