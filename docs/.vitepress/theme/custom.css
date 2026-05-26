@@ -642,7 +642,7 @@ body {
 .shadcn-timeline-content strong { color: var(--vp-c-text-1); font-size: 14px; }
 .shadcn-timeline-content p { margin: 4px 0 0; font-size: 13px; color: var(--vp-c-text-2); }
 
-/* Telegram Pill Button - Glass morphism */
+/* Telegram Pill Button - Glass morphism with diagonal border glow */
 .telegram-pill {
   position: relative;
   margin: 32px 0 16px;
@@ -665,47 +665,43 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  overflow: hidden;
+  overflow: visible;
   transition: all 0.25s ease;
 }
-.telegram-pill a::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 40px;
-  height: 40px;
-  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
-  border-radius: 50%;
-  transition: all 0.4s ease;
-}
+.telegram-pill a::before,
 .telegram-pill a::after {
   content: '';
   position: absolute;
-  bottom: -50%;
-  right: -50%;
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
-  border-radius: 50%;
-  transition: all 0.4s ease;
+  width: 30%;
+  height: 30%;
+  border-radius: 9999px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.telegram-pill a::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1.5px solid rgba(255,255,255,0.35);
+  border-left: 1.5px solid rgba(255,255,255,0.35);
+}
+.telegram-pill a::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1.5px solid rgba(255,255,255,0.25);
+  border-right: 1.5px solid rgba(255,255,255,0.25);
 }
 .telegram-pill a:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.12);
   color: #e8e8e8;
 }
 .telegram-pill a:hover::before {
-  top: -30%;
-  left: -30%;
-  width: 60px;
-  height: 60px;
+  border-top-color: rgba(255,255,255,0.55);
+  border-left-color: rgba(255,255,255,0.55);
 }
 .telegram-pill a:hover::after {
-  bottom: -30%;
-  right: -30%;
-  width: 70px;
-  height: 70px;
+  border-bottom-color: rgba(255,255,255,0.45);
+  border-right-color: rgba(255,255,255,0.45);
 }
 .telegram-pill img {
   flex-shrink: 0;
