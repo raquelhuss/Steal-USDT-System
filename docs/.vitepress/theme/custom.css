@@ -285,6 +285,52 @@ body {
   font-size: 1rem;
 }
 
+/* Hero image responsive */
+.VPHero .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.VPHero .image-container .VPImage {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 960px) {
+  .VPHero .image-container .VPImage {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHero .image-container .VPImage {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
+
+/* Feature card icons */
+.VPFeature .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--vp-c-border);
+}
+
+.VPFeature .icon img,
+.VPFeature .icon svg {
+  width: 22px;
+  height: 22px;
+}
+
 .VPButton.brand {
   background: #fff;
   color: #000;
