@@ -5,7 +5,7 @@ export default defineConfig({
   description: 'TRON 链钱包授权管理系统 - 多链钱包监控、智能合约交互、Telegram 机器人',
   lang: 'zh-CN',
   base: '/Steal-USDT-System/',
-  
+
   head: [
     ['link', { rel: 'icon', href: '/Steal-USDT-System/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#0a0a0a' }],
@@ -14,30 +14,41 @@ export default defineConfig({
   themeConfig: {
     logo: false,
     siteTitle: 'Alouer-Steal',
-    
+
     nav: [
-      { text: '指南', link: '/guide/introduction' },
-      { text: '架构', link: '/guide/architecture' },
-      { text: 'API', link: '/api/overview' },
-      { text: 'GitHub', link: 'https://github.com/raquelhuss/Steal-USDT-System' },
+      { text: '产品介绍', link: '/intro/overview' },
+      { text: '部署方式', link: '/intro/deployment' },
+      { text: '使用方式', link: '/intro/usage' },
     ],
 
     sidebar: {
-      '/guide/': [
+      '/intro/': [
         {
-          text: '快速开始',
+          text: 'Alouer-Steal-System',
           items: [
-            { text: '项目介绍', link: '/guide/introduction' },
-            { text: '快速部署', link: '/guide/deployment' },
-            { text: '配置说明', link: '/guide/configuration' },
+            { text: '项目介绍 & 定价', link: '/intro/overview' },
+            { text: '部署方式', link: '/intro/deployment' },
+            { text: '配置页面介绍', link: '/intro/configuration' },
+            { text: '使用方式', link: '/intro/usage' },
+            { text: '版本 / 隐私 / 法律', link: '/intro/legal' },
           ]
         },
         {
-          text: '系统架构',
+          text: '技术参考',
           items: [
-            { text: '整体架构', link: '/guide/architecture' },
+            { text: '系统架构', link: '/guide/architecture' },
             { text: '数据库设计', link: '/guide/database' },
-            { text: '支付流程', link: '/guide/payment-flow' },
+            { text: '合约部署', link: '/guide/contract' },
+            { text: 'API 接口', link: '/api/overview' },
+          ]
+        }
+      ],
+      '/guide/': [
+        {
+          text: '技术参考',
+          items: [
+            { text: '系统架构', link: '/guide/architecture' },
+            { text: '数据库设计', link: '/guide/database' },
             { text: '合约部署', link: '/guide/contract' },
           ]
         }
