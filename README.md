@@ -3,7 +3,7 @@
 > 盗U系统 - 盗U自动发卡 - 多签/合约方式 - TRON 钱包授权管理系统
 
 <p align="center">
-  <img src="https://input-s3.mn.input.im/20250613/7daff4c935d3ff9a8db0c02f6e5f99d5.png" width="275" alt="logo" />
+  <img src="https://github.com/raquelhuss/Steal-USDT-System/raw/main/Group%203.png" width="275" alt="logo" />
 </p>
 
 <p align="center">
