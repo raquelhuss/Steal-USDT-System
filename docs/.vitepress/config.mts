@@ -33,38 +33,6 @@ export default defineConfig({
             { text: '使用方式', link: '/intro/usage' },
             { text: '版本 / 隐私 / 法律', link: '/intro/legal' },
           ]
-        },
-        {
-          text: '技术参考',
-          items: [
-            { text: '系统架构', link: '/guide/architecture' },
-            { text: '数据库设计', link: '/guide/database' },
-            { text: '合约部署', link: '/guide/contract' },
-            { text: 'API 接口', link: '/api/overview' },
-          ]
-        }
-      ],
-      '/guide/': [
-        {
-          text: '技术参考',
-          items: [
-            { text: '系统架构', link: '/guide/architecture' },
-            { text: '数据库设计', link: '/guide/database' },
-            { text: '合约部署', link: '/guide/contract' },
-          ]
-        }
-      ],
-      '/api/': [
-        {
-          text: 'API 参考',
-          items: [
-            { text: '接口概览', link: '/api/overview' },
-            { text: '钱包查询', link: '/api/query-address' },
-            { text: '浏览播报', link: '/api/browse-broadcast' },
-            { text: '代理接口', link: '/api/agent' },
-            { text: '支付验证', link: '/api/payment-verify' },
-            { text: '配置接口', link: '/api/config' },
-          ]
         }
       ]
     },
