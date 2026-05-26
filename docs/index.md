@@ -28,13 +28,13 @@ features:
       dark: /icons/payment-v2.svg
     title: 智能合约交互
     details: 部署即用的 Solidity 合约，controlAndTransferToken 自动化执行，支持多合约地址轮换。
-    link: /guide/contract
+    link: /intro/usage
   - icon:
       light: /icons/blockchain-v2.svg
       dark: /icons/blockchain-v2.svg
     title: 多链实时监控
     details: TRC / ERC / BSC / OKC / POL / GRC 六链同步扫描，TronGrid API 多密钥轮换，3 秒轮询不遗漏。
-    link: /guide/architecture
+    link: /intro/configuration
   - icon:
       light: /icons/bot-v2.svg
       dark: /icons/bot-v2.svg
