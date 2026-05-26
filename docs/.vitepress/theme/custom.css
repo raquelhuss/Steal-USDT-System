@@ -642,23 +642,75 @@ body {
 .shadcn-timeline-content strong { color: var(--vp-c-text-1); font-size: 14px; }
 .shadcn-timeline-content p { margin: 4px 0 0; font-size: 13px; color: var(--vp-c-text-2); }
 
-/* Telegram Pill Button */
+/* Telegram Pill Button - Glass morphism */
 .telegram-pill {
   position: relative;
-  margin: 20px 0 12px;
+  margin: 32px 0 16px;
   padding: 0 24px;
 }
 .telegram-pill a {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  width: 100%; padding: 10px 0;
-  background: #2563eb; color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 0;
   border-radius: 9999px;
-  font-size: 13px; font-weight: 500;
+  font-size: 13px;
+  font-weight: 500;
   text-decoration: none;
-  transition: background 0.15s;
+  color: #c8c8c8;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: all 0.25s ease;
 }
-.telegram-pill a:hover { background: #1d4ed8; }
-.telegram-pill svg { flex-shrink: 0; }
+.telegram-pill a::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.telegram-pill a::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.telegram-pill a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e8e8e8;
+}
+.telegram-pill a:hover::before {
+  top: -30%;
+  left: -30%;
+  width: 60px;
+  height: 60px;
+}
+.telegram-pill a:hover::after {
+  bottom: -30%;
+  right: -30%;
+  width: 70px;
+  height: 70px;
+}
+.telegram-pill img {
+  flex-shrink: 0;
+  filter: brightness(1.1);
+}
 
 /* Legal disclaimer */
 #legal-disclaimer { border: 1px solid rgba(248,113,113,0.3); }
