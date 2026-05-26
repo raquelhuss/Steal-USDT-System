@@ -2,7 +2,7 @@
 
 <div class="shadcn-card shadcn-card-info">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
     <span>推荐方案</span>
   </div>
   <div class="shadcn-card-body">
@@ -17,7 +17,7 @@
 <div class="shadcn-grid shadcn-grid-2">
 
 <div class="shadcn-requirement">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
   <div>
     <strong>操作系统</strong>
     <span>Ubuntu 20.04+ / CentOS 7+ / Debian</span>
@@ -25,7 +25,7 @@
 </div>
 
 <div class="shadcn-requirement">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line></svg>
   <div>
     <strong>内存</strong>
     <span>最低 2GB，推荐 4GB+</span>
@@ -33,7 +33,7 @@
 </div>
 
 <div class="shadcn-requirement">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
   <div>
     <strong>Docker</strong>
     <span>20.10+ / Docker Compose v2+</span>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="shadcn-requirement">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path></svg>
   <div>
     <strong>端口</strong>
     <span>80 (Web) / 3306 (MySQL) / 6379 (Redis)</span>
@@ -58,31 +58,35 @@
   <div class="shadcn-step-number">1</div>
   <div class="shadcn-step-content">
     <strong>克隆项目</strong>
-    <div class="shadcn-code-block">
+    <p>从 GitHub 获取最新源码。</p>
+  </div>
+</div>
+
+</div>
 
 ```bash
 git clone https://github.com/cnmbdb/Alure-du.git
 cd Alure-du/主程序源码
 ```
 
-    </div>
-  </div>
-</div>
+<div class="shadcn-steps">
 
 <div class="shadcn-step">
   <div class="shadcn-step-number">2</div>
   <div class="shadcn-step-content">
     <strong>配置环境</strong>
-    <div class="shadcn-code-block">
+    <p>复制环境配置文件并编辑关键参数。</p>
+  </div>
+</div>
+
+</div>
 
 ```bash
 cp .env.example .env
 nano .env
 ```
 
-    </div>
-    <p>编辑以下关键配置：</p>
-    <div class="shadcn-table-wrapper">
+<div class="shadcn-table-wrapper">
 
 | 变量 | 说明 |
 |------|------|
@@ -93,48 +97,57 @@ nano .env
 | REDIS_HOST | Redis 主机 |
 | ADMIN_ROUTE_PREFIX | 后台路径 |
 
-    </div>
-  </div>
 </div>
+
+<div class="shadcn-steps">
 
 <div class="shadcn-step">
   <div class="shadcn-step-number">3</div>
   <div class="shadcn-step-content">
     <strong>启动服务</strong>
-    <div class="shadcn-code-block">
+    <p>使用 Docker Compose 一键启动所有容器。</p>
+  </div>
+</div>
+
+</div>
 
 ```bash
 docker-compose up -d
 ```
 
-    </div>
-    <div class="shadcn-card shadcn-card-warning" style="margin-top: 12px;">
-      <div class="shadcn-card-body">
-        💡 首次启动会拉取镜像并执行 composer install，约需 3-5 分钟。
-      </div>
-    </div>
+<div class="shadcn-card shadcn-card-warning" style="margin-top: 12px;">
+  <div class="shadcn-card-body">
+    💡 首次启动会拉取镜像并执行 composer install，约需 3-5 分钟。
   </div>
 </div>
+
+<div class="shadcn-steps">
 
 <div class="shadcn-step">
   <div class="shadcn-step-number">4</div>
   <div class="shadcn-step-content">
     <strong>导入数据库</strong>
-    <div class="shadcn-code-block">
+    <p>将 SQL 文件导入 MySQL 容器。</p>
+  </div>
+</div>
+
+</div>
 
 ```bash
 docker exec -i <mysql容器名> mysql -uroot -p < dujiaoka.sql
 ```
 
-    </div>
-  </div>
-</div>
+<div class="shadcn-steps">
 
 <div class="shadcn-step">
   <div class="shadcn-step-number">5</div>
   <div class="shadcn-step-content">
     <strong>启动机器人</strong>
-    <div class="shadcn-code-block">
+    <p>安装 Node.js 依赖并用 PM2 守护运行。</p>
+  </div>
+</div>
+
+</div>
 
 ```bash
 npm install
@@ -142,21 +155,11 @@ pm2 start bot.js --name du-bot
 pm2 save
 ```
 
-    </div>
-  </div>
-</div>
-
-</div>
-
 ---
 
 ## 方式二：VPS 手动部署
 
-<div class="shadcn-tabs">
-
 ### 安装依赖
-
-<div class="shadcn-code-block">
 
 ```bash
 # PHP 7.4 + 扩展
@@ -176,11 +179,7 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
-</div>
-
 ### 配置 Nginx
-
-<div class="shadcn-code-block">
 
 ```nginx
 server {
@@ -201,11 +200,7 @@ server {
 }
 ```
 
-</div>
-
 ### 启动
-
-<div class="shadcn-code-block">
 
 ```bash
 cd /var/www/dujiaoka
@@ -215,15 +210,9 @@ php artisan key:generate
 systemctl restart nginx php7.4-fpm
 ```
 
-</div>
-
-</div>
-
 ---
 
 ## 方式三：Cloudflare Tunnel
-
-<div class="shadcn-code-block">
 
 ```bash
 # 安装
@@ -240,11 +229,11 @@ cloudflared tunnel route dns du-aloure du.aloure-web.top
 cloudflared tunnel run --url http://localhost:8080
 ```
 
-</div>
+---
 
 <div class="shadcn-card shadcn-card-info" style="margin-top: 24px;">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
     <span>部署完成后</span>
   </div>
   <div class="shadcn-card-body">

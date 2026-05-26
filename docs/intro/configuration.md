@@ -8,8 +8,6 @@
 
 ## 主要配置
 
-<div class="shadcn-table-wrapper">
-
 | 配置项 | 必填 | 类型 | 说明 |
 |--------|------|------|------|
 | 主域名 | ✅ | text | 网站主域名，用于代理链接生成 |
@@ -21,13 +19,11 @@
 | 授权模式 | ✅ | select | 1=普通（弹窗提示） 2=静默 |
 | 提币时填写USDT地址 | | select | 合约方法是否需要 USDT 合约地址参数 |
 
-</div>
-
 ## TRC 钱包配置
 
 <div class="shadcn-card shadcn-card-warning" style="margin-bottom: 16px;">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
     <span>安全提醒</span>
   </div>
   <div class="shadcn-card-body">
@@ -35,27 +31,19 @@
   </div>
 </div>
 
-<div class="shadcn-table-wrapper">
-
 | 配置项 | 类型 | 说明 |
 |--------|------|------|
 | TRC收款地址 | text | 平台 TRC20 收款钱包地址 |
 | TRC权限地址 | textarea | 部署的合约地址，支持多行多地址轮换 |
 | TRC权限私钥 | password | 合约部署者私钥，用于签名转账交易 |
 
-</div>
-
 ## EVM 钱包配置
-
-<div class="shadcn-table-wrapper">
 
 | 配置项 | 类型 | 说明 |
 |--------|------|------|
 | EVM收款地址 | text | EVM 链收款地址 |
 | EVM权限地址 | text | EVM 合约地址 |
 | EVM权限私钥 | password | EVM 私钥 |
-
-</div>
 
 <div class="shadcn-card shadcn-card-info" style="margin-top: 16px;">
   <div class="shadcn-card-body">
@@ -73,7 +61,7 @@
 
 <div class="shadcn-card">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
     <span>站点信息</span>
   </div>
   <div class="shadcn-card-body">
@@ -83,7 +71,7 @@
 
 <div class="shadcn-card">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line></svg>
     <span>模板设置</span>
   </div>
   <div class="shadcn-card-body">
@@ -93,7 +81,7 @@
 
 <div class="shadcn-card">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     <span>邮件配置</span>
   </div>
   <div class="shadcn-card-body">
@@ -103,7 +91,7 @@
 
 <div class="shadcn-card">
   <div class="shadcn-card-header">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
     <span>推送通知</span>
   </div>
   <div class="shadcn-card-body">
@@ -117,31 +105,19 @@
 
 ## 代理管理
 
-<div class="shadcn-steps">
+### 第一步：创建代理分组
 
-<div class="shadcn-step">
-  <div class="shadcn-step-number">1</div>
-  <div class="shadcn-step-content">
-    <strong>创建代理分组</strong>
-    <p>「财神系统 → 总代管理」→ 新建分组，填入 Telegram 群组 ID 和分润比例</p>
-    <div class="shadcn-table-wrapper">
+「财神系统 → 总代管理」→ 新建分组，填入 Telegram 群组 ID 和分润比例。
 
 | 字段 | 说明 |
 |------|------|
-| 群组ID | Telegram 群组 ID（如 -1002283262521） |
+| 群组ID | Telegram 群组 ID |
 | 分润比例 | 0.00-1.00（0.50 = 五五分） |
 | 状态 | 1=上课（启用） 0=下课（停用） |
 
-    </div>
-  </div>
-</div>
+### 第二步：添加代理
 
-<div class="shadcn-step">
-  <div class="shadcn-step-number">2</div>
-  <div class="shadcn-step-content">
-    <strong>添加代理</strong>
-    <p>「财神系统 → 渔夫管理」→ 新建代理</p>
-    <div class="shadcn-table-wrapper">
+「财神系统 → 渔夫管理」→ 新建代理。
 
 | 字段 | 说明 |
 |------|------|
@@ -149,12 +125,6 @@
 | 电报ID | Telegram 用户 ID |
 | 收款地址 | 代理 TRC20 收款钱包 |
 | 阈值 | 默认触发金额（USDT） |
-
-    </div>
-  </div>
-</div>
-
-</div>
 
 ---
 
