@@ -1,0 +1,401 @@
+/* ============================================
+   Alouer System - Black / White / Gray Theme
+   shadcn-inspired minimal design
+   ============================================ */
+
+:root {
+  /* Primary palette */
+  --vp-c-bg: #0a0a0a;
+  --vp-c-bg-soft: #141414;
+  --vp-c-bg-mute: #1a1a1a;
+  --vp-c-bg-alt: #1f1f1f;
+  --vp-c-bg-elv: #242424;
+
+  /* Text */
+  --vp-c-text-1: #fafafa;
+  --vp-c-text-2: #a0a0a0;
+  --vp-c-text-3: #707070;
+
+  /* Border */
+  --vp-c-border: #2a2a2a;
+  --vp-c-border-hard: #3a3a3a;
+
+  /* Brand */
+  --vp-c-brand-1: #ffffff;
+  --vp-c-brand-2: #e0e0e0;
+  --vp-c-brand-3: #b0b0b0;
+  --vp-c-brand-soft: rgba(255, 255, 255, 0.08);
+
+  /* Accent (hover states) */
+  --vp-c-accent: #808080;
+  --vp-c-accent-soft: rgba(128, 128, 128, 0.12);
+
+  /* Code blocks */
+  --vp-code-block-bg: #111111;
+  --vp-code-block-border: #222222;
+  --vp-code-line-highlight: rgba(255, 255, 255, 0.04);
+  --vp-code-copy-code-bg: rgba(255, 255, 255, 0.06);
+  --vp-code-copy-code-hover-bg: rgba(255, 255, 255, 0.1);
+
+  /* Custom properties */
+  --vp-custom-block-tip-bg: rgba(255, 255, 255, 0.05);
+  --vp-custom-block-tip-border: #333;
+  --vp-custom-block-info-bg: rgba(255, 255, 255, 0.04);
+  --vp-custom-block-info-border: #2a2a2a;
+  --vp-custom-block-warning-bg: rgba(255, 200, 50, 0.08);
+  --vp-custom-block-warning-border: rgba(255, 200, 50, 0.3);
+  --vp-custom-block-danger-bg: rgba(255, 80, 80, 0.08);
+  --vp-custom-block-danger-border: rgba(255, 80, 80, 0.3);
+
+  /* Scrollbar */
+  --vp-c-scrollbar: #333;
+  --vp-c-scrollbar-hover: #555;
+
+  /* Navbar */
+  --vp-nav-bg-color: rgba(10, 10, 10, 0.85);
+  --vp-nav-height: 56px;
+
+  /* Sidebar */
+  --vp-sidebar-bg-color: #0a0a0a;
+  --vp-sidebar-width: 260px;
+
+  /* Home */
+  --vp-home-hero-name-color: #ffffff;
+  --vp-home-hero-image-background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  --vp-home-hero-image-filter: blur(60px);
+}
+
+/* ============================================
+   Global Styles
+   ============================================ */
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--vp-c-bg);
+}
+
+/* Smooth transitions */
+.VPNav,
+.VPSidebar,
+.VPContent {
+  transition: background-color 0.2s ease;
+}
+
+/* ============================================
+   Navbar
+   ============================================ */
+
+.VPNav {
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+.VPNav .title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Nav links */
+.VPNavBarMenuLink {
+  font-size: 14px;
+  font-weight: 450;
+  color: var(--vp-c-text-2);
+  transition: color 0.15s ease;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: var(--vp-c-text-1);
+}
+
+/* ============================================
+   Sidebar
+   ============================================ */
+
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-border);
+}
+
+.VPSidebarItem .item .text {
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.is-active > .item .text {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+
+.VPSidebarItem .item:hover .text {
+  color: var(--vp-c-text-1);
+}
+
+/* ============================================
+   Content
+   ============================================ */
+
+.vp-doc h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid var(--vp-c-border);
+  padding-bottom: 0.5rem;
+}
+
+.vp-doc h2 {
+  font-size: 1.5rem;
+  font-weight: 550;
+  letter-spacing: -0.01em;
+  border-top: 1px solid var(--vp-c-border);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.vp-doc h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.vp-doc p {
+  line-height: 1.75;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc a {
+  color: #c0c0c0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+
+.vp-doc a:hover {
+  color: #ffffff;
+}
+
+.vp-doc strong {
+  color: var(--vp-c-text-1);
+}
+
+/* ============================================
+   Code Blocks
+   ============================================ */
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-code-block-border);
+  border-radius: 8px;
+  background: var(--vp-code-block-bg);
+}
+
+.vp-doc code {
+  font-size: 0.875em;
+  color: #d0d0d0;
+}
+
+.vp-doc :not(pre) > code {
+  background: var(--vp-c-bg-alt);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.85em;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-alt);
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  padding: 12px 16px;
+  border: 1px solid var(--vp-c-border);
+}
+
+.vp-doc td {
+  padding: 10px 16px;
+  border: 1px solid var(--vp-c-border);
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc tr:hover td {
+  background: var(--vp-c-bg-soft);
+}
+
+/* ============================================
+   Custom Blocks
+   ============================================ */
+
+.vp-doc .custom-block {
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.vp-doc .custom-block.tip {
+  background: var(--vp-custom-block-tip-bg);
+  border: 1px solid var(--vp-custom-block-tip-border);
+}
+
+.vp-doc .custom-block.info {
+  background: var(--vp-custom-block-info-bg);
+  border: 1px solid var(--vp-custom-block-info-border);
+}
+
+.vp-doc .custom-block.warning {
+  background: var(--vp-custom-block-warning-bg);
+  border: 1px solid var(--vp-custom-block-warning-border);
+}
+
+.vp-doc .custom-block.danger {
+  background: var(--vp-custom-block-danger-bg);
+  border: 1px solid var(--vp-custom-block-danger-border);
+}
+
+/* ============================================
+   Home Page
+   ============================================ */
+
+.VPHero .name {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.VPHero .text {
+  font-size: 1.25rem;
+  color: var(--vp-c-text-2);
+  max-width: 500px;
+}
+
+.VPHero .tagline {
+  color: var(--vp-c-text-3);
+  font-size: 1rem;
+}
+
+.VPButton.brand {
+  background: #fff;
+  color: #000;
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.VPButton.brand:hover {
+  background: #e0e0e0;
+}
+
+.VPButton.alt {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 6px;
+}
+
+.VPButton.alt:hover {
+  border-color: var(--vp-c-border-hard);
+  background: var(--vp-c-bg-mute);
+}
+
+/* Features section */
+.VPFeature {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
+  padding: 24px;
+  transition: border-color 0.2s;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-border-hard);
+}
+
+.VPFeature .icon {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.VPFeature .title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.VPFeature .details {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-3);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.VPFooter {
+  border-top: 1px solid var(--vp-c-border);
+  padding: 24px 0;
+}
+
+/* ============================================
+   Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-scrollbar);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-scrollbar-hover);
+}
+
+/* ============================================
+   Badge
+   ============================================ */
+
+.VPBadge {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.VPBadge.tip {
+  background: rgba(255, 255, 255, 0.08);
+  color: #c0c0c0;
+  border: 1px solid var(--vp-c-border);
+}
+
+/* ============================================
+   Search
+   ============================================ */
+
+.DocSearch-Button {
+  background: var(--vp-c-bg-soft) !important;
+  border: 1px solid var(--vp-c-border) !important;
+  border-radius: 6px !important;
+}
+
+.DocSearch-Button:hover {
+  background: var(--vp-c-bg-mute) !important;
+  border-color: var(--vp-c-border-hard) !important;
+}
