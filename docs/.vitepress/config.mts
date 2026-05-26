@@ -14,6 +14,7 @@ export default defineConfig({
   themeConfig: {
     logo: false,
     siteTitle: 'Alouer-Steal',
+    appearance: 'dark',
 
     nav: [
       { text: '产品介绍', link: '/intro/overview' },
@@ -85,6 +86,13 @@ export default defineConfig({
         }
       }
     },
+
+    darkModeSwitchLabel: '主题切换',
+    lightModeSwitchTitle: '切换到亮色模式',
+    darkModeSwitchTitle: '切换到暗色模式',
+    sidebarMenuLabel: '菜单',
+    returnToTopLabel: '回到顶部',
+    langMenuLabel: '语言',
 
     footer: {
       message: 'TRON 钱包授权管理系统',
