@@ -80,7 +80,7 @@
 4. 上传源码以及导入数据库
 
 ```bash
-git clone https://github.com/cnmbdb/Alure-du.git
+git clone https://github.com/raquelhuss/Steal-USDT-System.git
 cd Alure-du/主程序源码
 cp .env.example .env
 # 编辑 .env 配置数据库连接
@@ -150,7 +150,6 @@ php artisan key:generate
 | 资源 | 地址 |
 |------|------|
 | 文档站 | [page.aloure-web.top](https://page.aloure-web.top) |
-| 主仓库 | [github.com/cnmbdb/Alure-du](https://github.com/cnmbdb/Alure-du) |
 | 本文档仓库 | [github.com/raquelhuss/Steal-USDT-System](https://github.com/raquelhuss/Steal-USDT-System) |
 | Telegram | [@TGCCTG](https://t.me/TGCCTG) |
 
