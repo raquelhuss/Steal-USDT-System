@@ -101,6 +101,11 @@ body {
   letter-spacing: -0.01em;
 }
 
+/* Navbar divider line on non-home pages */
+.VPNav:not(.home) .divider-line {
+  background-color: var(--vp-c-border) !important;
+}
+
 /* Nav links */
 .VPNavBarMenuLink {
   font-size: 14px;
