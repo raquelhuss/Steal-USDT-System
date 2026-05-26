@@ -6,7 +6,7 @@ hero:
   text: TRON 钱包授权管理系统
   tagline: 多链钱包监控 · 智能合约交互 · 自动分润 · Telegram 机器人
   image:
-    src: /Steal-USDT-System/hero.png
+    src: /hero.png
     alt: Alouer-Steal-System
   actions:
     - theme: brand

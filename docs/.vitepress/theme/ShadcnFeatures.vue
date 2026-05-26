@@ -46,7 +46,7 @@ const features = [
     <div class="shadcn-features-grid">
       <div v-for="f in features" :key="f.title" class="shadcn-feature-card">
         <div class="shadcn-feature-icon">
-          <img :src="`/Steal-USDT-System/icons/${f.icon}.svg`" :alt="f.title" width="22" height="22" />
+          <img :src="`/icons/${f.icon}.svg`" :alt="f.title" width="22" height="22" />
         </div>
         <div class="shadcn-feature-content">
           <h3>{{ f.title }}</h3>
