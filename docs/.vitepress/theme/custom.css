@@ -315,16 +315,18 @@ body {
 /* Feature card icons */
 .VPFeature .box > .VPImage {
   display: block;
-  width: 28px;
-  height: 28px;
-  margin-bottom: 14px;
-  opacity: 0.7;
-  filter: brightness(1.5);
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--vp-c-border);
 }
 
 .VPFeature:hover .box > .VPImage {
-  opacity: 1;
-  filter: brightness(2);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--vp-c-border-hard);
 }
 
 .VPFeature .icon img,
