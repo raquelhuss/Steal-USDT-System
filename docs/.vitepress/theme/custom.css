@@ -381,6 +381,10 @@ body {
   opacity: 0.85;
 }
 
+.VPFeature .icon {
+  color: #a0a0a0;
+}
+
 .VPFeature .title {
   font-size: 1rem;
   font-weight: 600;
