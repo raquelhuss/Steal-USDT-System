@@ -92,6 +92,9 @@ body {
 
 .VPNav {
   backdrop-filter: blur(12px);
+}
+
+.VPNav .VPNavBar:not(.home) {
   border-bottom: 1px solid var(--vp-c-border);
 }
 
@@ -102,8 +105,8 @@ body {
 }
 
 /* Navbar divider line on non-home pages */
-.VPNav:not(.home) .divider-line {
-  background-color: var(--vp-c-border) !important;
+.VPNav .VPNavBar:not(.home) .divider-line {
+  background-color: var(--vp-c-border);
 }
 
 /* Nav links */
