@@ -63,6 +63,12 @@
   --vp-home-hero-name-color: #ffffff;
   --vp-home-hero-image-background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
   --vp-home-hero-image-filter: blur(60px);
+
+  /* Button */
+  --vp-button-brand-bg: #ffffff;
+  --vp-button-brand-text: #000000;
+  --vp-button-brand-hover-bg: #e0e0e0;
+  --vp-button-brand-hover-text: #000000;
 }
 
 /* ============================================
